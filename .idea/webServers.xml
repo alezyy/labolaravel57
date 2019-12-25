@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="680354a5-59fc-48cc-84c9-ef2610281bb6" name="laboravel" url="http://23.92.21.108">
+        <fileTransfer host="23.92.21.108" port="22" rootFolder="/var/www/labolaravel57" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
