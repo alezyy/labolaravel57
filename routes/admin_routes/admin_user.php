@@ -1,2 +1,2 @@
 <?php
-Route::get('/', 'AdminController@index')->name('admin');
+Route::get('/', 'Admin\AdminController@indexAdminUsers')->name('admin');
