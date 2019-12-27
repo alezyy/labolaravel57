@@ -21,23 +21,23 @@
             <button class="close" data-close="alert"></button>
             <span>{{ $errors->first('password') }}</span>
         </div>
-        @endif                
+        @endif
         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
             <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
             <label class="control-label visible-ie8 visible-ie9">E-Mail Address</label>
-            <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Email Address" name="email" value="{{old('email')}}" />                   
+            <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Email Address" name="email" value="{{old('email')}}" />
         </div>
         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
             <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
             <label class="control-label visible-ie8 visible-ie9">Password</label>
-            <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="password" name="password" />  
+            <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="password" name="password" />
         </div>
         <div class="form-actions">
             <button type="submit" class="btn green uppercase">Login</button>
             <label class="rememberme check">
                 <input type="checkbox" name="remember" />Remember </label>
             <a class="forget-password" href="{{ route('admin.password.request') }}">Forgot Password?</a>
-        </div>                                
+        </div>
     </form>
     <!-- END LOGIN FORM -->
 </div>

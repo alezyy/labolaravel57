@@ -11,6 +11,8 @@
 |
 */
 
+$real_path = realpath(__DIR__) . DIRECTORY_SEPARATOR . 'front_routes' . DIRECTORY_SEPARATOR;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+
+/* * ******** Admin Auth ************ */
+include_once($real_path . 'admin_auth.php');
